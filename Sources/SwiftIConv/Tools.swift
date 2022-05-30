@@ -141,7 +141,7 @@ public func which(names: [String]) -> [String?] {
                 let result: Int = execute(exec: "/bin/bash", args: [ "-c", "which \"\(n)\"" ], stdout: &txt, stderr: &err)
             #endif
             if result == 0 {
-                let item: String = txt.split(on: "\\R")[0]
+                let item: String = txt.split(on: "(?:\\r\\n?|\\n)")[0]
                 out.append(item.trimmed.isEmpty ? nil : item)
             }
             else {

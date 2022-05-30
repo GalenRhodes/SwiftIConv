@@ -17,6 +17,7 @@
 		83185D102832BED2007515D8 /* SwiftIConvTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83185D0F2832BED2007515D8 /* SwiftIConvTests.swift */; };
 		83185D112832BED2007515D8 /* SwiftIConv.h in Headers */ = {isa = PBXBuildFile; fileRef = 83185D032832BED2007515D8 /* SwiftIConv.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		83185D1C2832BF1B007515D8 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 83185D1B2832BF10007515D8 /* libiconv.tbd */; };
+		833688BB2843A53200C81A36 /* RegularExpression in Frameworks */ = {isa = PBXBuildFile; productRef = 833688BA2843A53200C81A36 /* RegularExpression */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83185D1C2832BF1B007515D8 /* libiconv.tbd in Frameworks */,
+				833688BB2843A53200C81A36 /* RegularExpression in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +188,9 @@
 			dependencies = (
 			);
 			name = SwiftIConv;
+			packageProductDependencies = (
+				833688BA2843A53200C81A36 /* RegularExpression */,
+			);
 			productName = SwiftIConv;
 			productReference = 83185D002832BED2007515D8 /* SwiftIConv.framework */;
 			productType = "com.apple.product-type.framework";
@@ -235,6 +240,9 @@
 				Base,
 			);
 			mainGroup = 83185CF62832BED2007515D8;
+			packageReferences = (
+				833688B92843A53200C81A36 /* XCRemoteSwiftPackageReference "RegularExpression" */,
+			);
 			productRefGroup = 83185D012832BED2007515D8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -533,6 +541,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		833688B92843A53200C81A36 /* XCRemoteSwiftPackageReference "RegularExpression" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GalenRhodes/RegularExpression.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		833688BA2843A53200C81A36 /* RegularExpression */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 833688B92843A53200C81A36 /* XCRemoteSwiftPackageReference "RegularExpression" */;
+			productName = RegularExpression;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 83185CF72832BED2007515D8 /* Project object */;
 }

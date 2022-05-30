@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "regularexpression",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/GalenRhodes/RegularExpression.git",
+      "state" : {
+        "revision" : "48f1b2402a495fa3562f0c175bba102af8962acd",
+        "version" : "3.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}
